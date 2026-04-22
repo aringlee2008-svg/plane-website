@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyWings – Flights</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <nav>
+    <a class="nav-logo" href="index.html">✈ SkyWings</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="flights.html">Flights</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <h1>Our Flights 🗺️</h1>
+    <p>Browse popular routes, aircraft types, and destinations. The world is waiting.</p>
+  </div>
+
+  <div class="section">
+    <h2>Aircraft in Our Fleet</h2>
+    <p>We operate a modern fleet of the world's most reliable aircraft. Here are our top planes:</p>
+    <ol class="styled-list">
+      <li><strong>Boeing 747</strong> – The iconic "Queen of the Skies". Perfect for long-haul international flights.</li>
+      <li><strong>Airbus A380</strong> – The world's largest passenger jet, with double-deck luxury cabins.</li>
+      <li><strong>Boeing 737</strong> – Our workhorse for short and medium-distance domestic routes.</li>
+      <li><strong>Airbus A320</strong> – Fuel-efficient and comfortable for regional travel across continents.</li>
+      <li><strong>Boeing 787 Dreamliner</strong> – Next-gen aircraft with bigger windows and better air pressure for comfort.</li>
+    </ol>
+  </div>
+
+  <div class="section">
+    <h2>Popular Routes</h2>
+    <p>Check out our most-booked flight routes around the world:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>From</th>
+          <th>To</th>
+          <th>Aircraft</th>
+          <th>Flight Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>New York (JFK)</td>
+          <td>London (LHR)</td>
+          <td>Boeing 747</td>
+          <td>~7 hours</td>
+        </tr>
+        <tr>
+          <td>Los Angeles (LAX)</td>
+          <td>Tokyo (NRT)</td>
+          <td>Boeing 787</td>
+          <td>~11 hours</td>
+        </tr>
+        <tr>
+          <td>Chicago (ORD)</td>
+          <td>Paris (CDG)</td>
+          <td>Airbus A380</td>
+          <td>~9 hours</td>
+        </tr>
+        <tr>
+          <td>Miami (MIA)</td>
+          <td>Cancún (CUN)</td>
+          <td>Boeing 737</td>
+          <td>~2 hours</td>
+        </tr>
+        <tr>
+          <td>San Francisco (SFO)</td>
+          <td>Sydney (SYD)</td>
+          <td>Airbus A380</td>
+          <td>~17 hours</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Cabin Class Picker</h2>
+    <p>Wondering which seat class is right for you? Click a class to see what's included.</p>
+    <div style="display:flex; gap:12px; flex-wrap:wrap; margin-bottom:20px;">
+      <button class="btn" onclick="showClass('economy')">Economy</button>
+      <button class="btn" onclick="showClass('business')">Business</button>
+      <button class="btn" onclick="showClass('first')">First Class</button>
+    </div>
+    <div id="class-info" style="background:#1a2a4a; border:1px solid #2a4a7a; border-radius:12px; padding:25px; display:none;">
+      <h3 id="class-title" style="color:#4a90d9; margin-bottom:12px;"></h3>
+      <p id="class-desc" style="color:#b0c4de;"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2024 SkyWings Airlines. All rights reserved. ✈</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
